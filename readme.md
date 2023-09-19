@@ -1,4 +1,4 @@
-<h1 align="center"> <b>U Film</b> </h1>
+
 <p align="center">
   <img  src="./assets/img/logo.png" width="35%" >
 </p>
