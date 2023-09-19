@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Git e Github
 
 ## 💻 Projeto
-- [Projeto Finalizado](http://condmanager.live/)
+- [Projeto Finalizado](https://gabrielsouza18.github.io/Ufilm/)
 
 
 
