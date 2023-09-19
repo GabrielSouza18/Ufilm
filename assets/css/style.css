@@ -1,0 +1,96 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body {
+  background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+  color: #ffffff;
+}
+.container {
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+.header-superior {
+  margin-top: 2em;
+}
+.header-superior p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 25px;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.conteudo-filme {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+#cartaz-filme {
+  margin-right: 4em;
+}
+
+.titulo-filme {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0; /* Defina o margin para zero */
+}
+
+#descricao {
+  line-height:20px;
+  font-weight: 100;
+  margin-top: 1em; /* Adicione um margin-top para criar espaço entre o título e a descrição */
+  max-width: 500px;
+  max-height: 50px;
+}
+
+.info-filme {
+  display: flex;
+  flex-direction: column;
+}
+
+#encontrar-filme {
+  display: flex; /* Torna o conteúdo do botão flexível */
+  align-items: center; /* Centraliza verticalmente os elementos */
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  margin: 0 auto; /* Centraliza horizontalmente o botão */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-top: 1em;
+}
+#encontrar-filme:hover {
+  background: #ffffff;
+}
+
+#encontrar-filme p {
+  margin-left: 10px; /* Adicione um espaço à esquerda do texto para separá-lo do ícone */
+}
+.p-bottom{
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 2em;
+  color: #e9e9e9;
+}
