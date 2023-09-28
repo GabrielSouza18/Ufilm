@@ -44,15 +44,19 @@ main {
 #cartaz-filme {
   margin-right: 4em;
 }
+#banner-filme {
+  height: 450px;
+}
 
-.titulo-filme {
+#titulo-filme {
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: bold;
   margin: 0; /* Defina o margin para zero */
 }
 
 #descricao {
-  line-height:20px;
+  line-height: 20px;
   font-weight: 100;
   margin-top: 1em; /* Adicione um margin-top para criar espaço entre o título e a descrição */
   max-width: 500px;
@@ -64,7 +68,8 @@ main {
   flex-direction: column;
 }
 
-#encontrar-filme {
+#encontrar-filme,
+.ver-sinopse {
   display: flex; /* Torna o conteúdo do botão flexível */
   align-items: center; /* Centraliza verticalmente os elementos */
   justify-content: center; /* Centraliza horizontalmente os elementos */
@@ -78,6 +83,13 @@ main {
   font-weight: 500;
   margin-top: 1em;
 }
+.ver-sinopse{
+  display: none;
+}
+.modal{
+  display: none;
+}
+
 #encontrar-filme:hover {
   background: #ffffff;
 }
@@ -85,7 +97,7 @@ main {
 #encontrar-filme p {
   margin-left: 10px; /* Adicione um espaço à esquerda do texto para separá-lo do ícone */
 }
-.p-bottom{
+.p-bottom {
   display: flex;
   justify-content: center;
   font-family: "Poppins", sans-serif;
@@ -93,4 +105,37 @@ main {
   font-weight: 100;
   margin-top: 2em;
   color: #e9e9e9;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .p-bottom,
+  #descricao,
+  .ver-sinopse,
+  #titulo-filme {
+    display: none;
+  }
+ 
+  #banner-filme {
+    height: 300px;
+    margin-left: 55px;
+    margin-top: 10px; 
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 }
