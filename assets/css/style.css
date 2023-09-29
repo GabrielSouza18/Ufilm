@@ -8,8 +8,13 @@ body {
 body {
   background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
 }
-.p-header {
+.p-header,
+.p-mobile {
   color: #ffffff;
+}
+
+.p-mobile {
+  display: none;
 }
 .container {
   align-items: center;
@@ -19,7 +24,7 @@ body {
 .header-superior {
   margin-top: 2em;
 }
-.header-superior p {
+.header-superior .p-header {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -111,11 +116,18 @@ main {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .p-bottom,
   #descricao,
-  .ver-sinopse,
   #titulo-filme {
     display: none;
   }
+  .p-mobile {
+    display: block;
 
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 8em;
+  }
   #banner-filme {
     height: 300px;
     margin-left: 55px;

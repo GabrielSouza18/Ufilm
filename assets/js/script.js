@@ -1,4 +1,4 @@
-let movieContainer = document.querySelector(".conteudo-filme");
+let movieContainer = document.querySelector('.conteudo-filme');
 let bannerMovie = document.querySelector('#banner-filme');
 let movieTitle = document.querySelector('#titulo-filme');
 let movieDescription = document.querySelector('#descricao');
@@ -8,6 +8,7 @@ let closeModalButton = document.querySelector('#closeModalButton');
 let modal = document.querySelector('#myModal');
 let titleMovieModal = document.querySelector('.title-movie-modal');
 let descriptionMovieModal = document.querySelector('#description-movie-modal');
+let pMobile = document.querySelector('.p-mobile');
 
 const API_KEY = 'e0d7645efbcad4ba43a36c7259e18592';
 const language = 'pt-BR';
@@ -38,6 +39,7 @@ movieButton.addEventListener('click', async () => {
 function renderMovie(movie) {
     movieContainer.style.display = 'flex';
     movieButtonSinopse.style.display = 'block';
+    pMobile.style.display = 'none'
     bannerMovie.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
     // console.log(movie.poster_path)
     movieTitle.textContent = movie.title;
@@ -45,6 +47,11 @@ function renderMovie(movie) {
     titleMovieModal.textContent = movie.title;
     // console.log("Descrição do filme:", movie.overview);
     descriptionMovieModal.textContent = movie.overview;
+    if (window.innerWidth <= 480) {
+        movieButtonSinopse.style.display = 'block';
+    } else {
+        movieButtonSinopse.style.display = 'none';
+    }
 }
 
 
