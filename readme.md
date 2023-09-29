@@ -5,7 +5,7 @@
 
 
 <p align="center">
-Projeto de consumo de API com AXIOS do The Movie DB para recomendar filmes <br/>
+Projeto de consumo de API do The Movie DB para recomendar filmes <br/>
 
 </p>
 
